@@ -106,13 +106,17 @@ header h1#logo {
   color: #fff;
 }
 
-#data-table {
+#transaction {
   display: block;
+  width: 100%;
+  overflow-x: auto; /*Deixa o comportamento do elemento fluído, fazendo que ele crie a barra de rolagem de modo automatico no eixo x.*/
+
+}
+#data-table {
+  
   width: 100%;
   border-spacing: 0 0.5rem;
   color: #969cb3; 
-
-  overflow-x: auto; /*Deixa o comportamento do elemento fluído, fazendo que ele crie a barra de rolagem de modo automatico no eixo x.*/
 }
 
 table thead tr th:first-child, 
@@ -158,6 +162,14 @@ td.income {
 
 td.expense {
   color: #e92929;
+}
+
+.modal-overlay {
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
 }
 
 footer {
