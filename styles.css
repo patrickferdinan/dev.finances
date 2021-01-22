@@ -107,9 +107,12 @@ header h1#logo {
 }
 
 #data-table {
+  display: block;
   width: 100%;
   border-spacing: 0 0.5rem;
   color: #969cb3; 
+
+  overflow-x: auto; /*Deixa o comportamento do elemento fluído, fazendo que ele crie a barra de rolagem de modo automatico no eixo x.*/
 }
 
 table thead tr th:first-child, 
