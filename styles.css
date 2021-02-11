@@ -20,6 +20,24 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.container {
+  width: min(90vw, 800px);
+
+  margin: auto;
+}
+
 h2 {
   margin-top: 3.2rem;
   margin-bottom: 0.8rem;
@@ -74,24 +92,6 @@ button:hover {
 
 .button.cancel:hover {
   opacity: 1;
-}
-
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border-width: 0;
-}
-
-.container {
-  width: min(90vw, 800px);
-
-  margin: auto;
 }
 
 header {
@@ -216,6 +216,8 @@ td.expense {
 
   opacity: 0;
   visibility: hidden;
+
+  z-index: 999;
 }
 
 .modal-overlay.active {
@@ -250,7 +252,7 @@ input {
   margin-top: 0.8rem;
 }
 
-.input-group .help {
+.input-group small {
   opacity: 0.4;
 }
 
